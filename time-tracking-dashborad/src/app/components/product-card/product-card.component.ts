@@ -24,5 +24,6 @@ export class ProductCardComponent {
     '#FF5E7D',
     '#FF8B64',
     '#55C2E6',
+    '#7335D2',
   ];
 }

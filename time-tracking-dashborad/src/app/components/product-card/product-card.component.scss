@@ -1,12 +1,11 @@
 .product-card {
-  width: 255px;
-  height: 199px;
   border-radius: var(--card-radius);
-  padding-top: 42px;
+  padding-top: 35px;
+  height: 165px;
   &_content {
     background-color: var(--primary-color);
-    padding: 25px;
-    height: 199px;
+    padding: 20px;
+    height: 165px;
     border-radius: var(--card-radius);
     &_header {
       display: flex;
@@ -43,6 +42,14 @@
         line-height: 14.22px;
         color: var(--text-sec-color);
         text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-height: 21px;
+        max-height: 48px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        width: 7.5rem;
       }
       .availability {
         display: flex;

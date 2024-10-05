@@ -1,7 +1,9 @@
 <section class="main">
   <app-report-card (setProductList)="setProductList($event)"></app-report-card>
-  <app-product-card
-    *ngFor="let product of productList | async"
-    [product]="product"
-  ></app-product-card>
+  <div class="product-cards">
+    <app-product-card
+      *ngFor="let product of productList | async"
+      [product]="product"
+    ></app-product-card>
+  </div>
 </section>

@@ -1,3 +1,17 @@
 .main {
   display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  .product-cards {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    app-product-card {
+      margin-bottom: 35px;
+    }
+  }
 }
