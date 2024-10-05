@@ -7,7 +7,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { ReportCardComponent } from './components/report-card/report-card.component';
 import { CardsContainerComponent } from './components/cards-container/cards-container.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +15,12 @@ import { HttpClientModule } from '@angular/common/http';
     ReportCardComponent,
     CardsContainerComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,10 +1,24 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../../interfaces/product.interface';
+import {
+  trigger,
+  transition,
+  style,
+  animate,
+  state,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-product-card',
   templateUrl: './product-card.component.html',
   styleUrl: './product-card.component.scss',
+  animations: [
+    trigger('fadeAnimation', [
+      state('in', style({ opacity: 1 })),
+      transition(':enter', [style({ opacity: 0 }), animate(600)]),
+      transition(':leave', animate(600, style({ opacity: 0 }))),
+    ]),
+  ],
 })
 export class ProductCardComponent {
   @Input() product!: Product;

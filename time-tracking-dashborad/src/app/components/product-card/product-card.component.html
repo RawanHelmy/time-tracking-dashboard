@@ -1,6 +1,7 @@
 <div
   class="product-card"
   [ngStyle]="{ backgroundColor: backgroundColors[product.id] }"
+  [@fadeAnimation]="'in'"
 >
   <section class="product-card_content">
     <div class="product-card_content_header">
