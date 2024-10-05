@@ -1,1 +1,22 @@
-<p>product-card works!</p>
+<div class="product-card">
+  <section class="product-card_content">
+    <div class="product-card_content_header">
+      <label>{{ product.category }}</label>
+      <img src="assets/svg/settings.svg" />
+    </div>
+    <div class="product-card_content_pricing">
+      <h2>{{ product.price }}$</h2>
+    </div>
+    <div class="product-card_content_desc">
+      <caption>
+        {{
+          product.title
+        }}
+      </caption>
+      <div class="availability">
+        <p>{{ product.rating.count > 0 ? "In Store" : "Out of Stock" }}</p>
+        <p>{{ product.rating.count }}</p>
+      </div>
+    </div>
+  </section>
+</div>

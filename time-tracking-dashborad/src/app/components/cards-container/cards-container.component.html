@@ -1,6 +1,7 @@
-<section>
+<section class="main">
   <app-report-card (setProductList)="setProductList($event)"></app-report-card>
-</section>
-<section *ngFor="let item of productList | async">
-  <app-product-card></app-product-card>
+  <app-product-card
+    *ngFor="let product of productList | async"
+    [product]="product"
+  ></app-product-card>
 </section>
