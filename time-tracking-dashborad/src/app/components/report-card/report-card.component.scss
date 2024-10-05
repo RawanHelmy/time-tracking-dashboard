@@ -69,3 +69,47 @@
     }
   }
 }
+@media (max-width: 540px) {
+  .report-card {
+    width: 327px;
+
+    &_header {
+      flex-direction: row;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      &_image-wrapper {
+        width: 64px;
+        height: 64px;
+        box-shadow: none;
+        img {
+          width: 140.31px;
+          height: 93.54px;
+          top: -13px;
+          right: 17px;
+        }
+      }
+      &_desc {
+        gap: 0;
+        align-self: center;
+        h1 {
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 28.44px;
+          text-align: left;
+          letter-spacing: normal;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    &_report {
+      display: flex;
+      gap: 16px;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

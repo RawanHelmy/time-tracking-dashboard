@@ -15,3 +15,22 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .product-cards {
+    max-height: 500px;
+    overflow: auto;
+  }
+}
+@media (max-width: 540px) {
+  .main {
+    flex-direction: column;
+    overflow: auto;
+    height: auto;
+    .product-cards {
+      overflow: unset;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  }
+}
