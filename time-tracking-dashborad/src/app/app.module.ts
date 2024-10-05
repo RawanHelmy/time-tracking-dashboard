@@ -6,19 +6,17 @@ import { AppComponent } from './app.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ReportCardComponent } from './components/report-card/report-card.component';
 import { CardsContainerComponent } from './components/cards-container/cards-container.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductCardComponent,
     ReportCardComponent,
-    CardsContainerComponent
+    CardsContainerComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

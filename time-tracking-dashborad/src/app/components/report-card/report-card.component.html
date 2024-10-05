@@ -1,1 +1,25 @@
-<p>report-card works!</p>
+<div class="report-card">
+  <section class="report-card_header">
+    <div class="report-card_header_image-wrapper">
+      <img src="assets/images/user.png" />
+    </div>
+    <div class="report-card_header_desc">
+      <caption>
+        Report for
+      </caption>
+      <h1>
+        Best <br />
+        Sales
+      </h1>
+    </div>
+  </section>
+  <section class="report-card_report">
+    <p
+      *ngFor="let item of timeStamps"
+      (click)="setTimeStamp(item.value)"
+      [class.active]="selectedStamp === item.value"
+    >
+      {{ item.label }}
+    </p>
+  </section>
+</div>

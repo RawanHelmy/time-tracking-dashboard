@@ -1,8 +1,16 @@
+:root {
+  --primary-color: #1c204b;
+  --secondary-color: #5747ea;
+  --text-sec-color: #bbc0ff;
+  --card-radius: 15px;
+}
 html,
 body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  color: white;
+  font-family: "Rubik", sans-serif;
 }
 body {
   background-color: #0e1323;

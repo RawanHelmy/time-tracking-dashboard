@@ -1,1 +1,6 @@
-<p>cards-container works!</p>
+<section>
+  <app-report-card (setProductList)="setProductList($event)"></app-report-card>
+</section>
+<section *ngFor="let item of productList | async">
+  <app-product-card></app-product-card>
+</section>
